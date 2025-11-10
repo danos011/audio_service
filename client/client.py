@@ -5,10 +5,15 @@ import os
 
 from dotenv import load_dotenv
 
+try:
+    load_dotenv()
+except Exception as e:
+    print("Энвы не считались!")
 
 
 async def run():
-    uri = "ws://localhost:8000/api/audio/ws"
+    uri = os.environ.get("WS_URL", "ws://localhost:8000/api/audio/ws")
+    print('uri', uri)
     async with websockets.connect(uri, max_size=None) as ws:
         async def sender():
             for i in range(1000):

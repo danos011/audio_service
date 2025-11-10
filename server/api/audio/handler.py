@@ -8,9 +8,11 @@ from starlette.websockets import WebSocket, WebSocketDisconnect
 ClientId = NewType("ClientId", int)
 router = APIRouter(prefix="/audio", tags=["Audio"])
 
+
 @router.get("/health")
 async def health():
     return JSONResponse({"status": "ok"})
+
 
 @router.websocket("/ws")
 async def ws_endpoint(websocket: WebSocket):
