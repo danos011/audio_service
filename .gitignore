@@ -1,0 +1,38 @@
+# Virtual environments
+backend/.venv/
+venv/
+env/
+
+# Env files
+backend/.env
+*.env
+*.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing
+.pytest_cache/
+.cache/
+.mypy_cache/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Editor directories
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+/docker_volumes
+
+/logs
