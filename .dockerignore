@@ -1,0 +1,32 @@
+# Папки с виртуальным окружением и кэшем
+venv/
+.venv/
+__pycache__/
+.idea/
+
+# Исполняемые файлы Python
+*.pyc
+
+# Системы контроля версий
+.git/
+.gitignore
+
+# Файлы Docker, которые не должны быть в образе
+.dockerignore
+docker-compose-*.yml
+docker_volumes/
+
+# Файлы конфигурации и окружения
+.env
+*.yaml
+*.yml
+
+# Логи
+logs/
+
+# Документация и лицензия
+README.md
+LICENSE
+
+# Скрипты
+entrypoint.sh
