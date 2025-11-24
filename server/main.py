@@ -9,7 +9,7 @@ from multiprocessing import Process, Queue
 from fastapi import FastAPI
 
 from api import router
-from api.audio.worker import audio_handler  # читает: (client_id, seq, payload) -> пишет: (client_id, dict)
+from api.audio.worker import audio_handler
 
 log = logging.getLogger("uvicorn.error")
 
